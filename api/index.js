@@ -11,8 +11,9 @@ app.use(cors({}));
 app.use(bodyParser.json());
 
 app.post('/api/updateBoard', (req, res) => {
-    console.log('Received POST request:', req.body);
-    socket.emit("boardUpdate", req.body);
+
+    console.log('Received POST request:', req.body.input);
+    io.emit("boardUpdate", req.body.input);
   res.send('Received your request!');
 });
 
