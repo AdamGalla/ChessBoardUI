@@ -2,13 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { useEffect } from 'react'
+import  io  from "socket.io-client";
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const socket = io.connect("http://localhost:3001");
   useEffect(() => {
-    const socket = socketio.connect("http://localhost:3001");
+    socket();
   }, []);
 
   return (
