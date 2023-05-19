@@ -30,7 +30,7 @@ function App() {
     <h1 className="title">Chess Wars</h1>
     </div>
       <div>
-        <Chessboard className="board" position={fen} width={500}></Chessboard>
+        <Chessboard position={fen} width={500}></Chessboard>
       </div>
       <div>
         <button className="button" onClick={clearBoard}> Clear the board </button>
