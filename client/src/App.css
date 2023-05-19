@@ -1,9 +1,14 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 
+}
+
+body{
+  background-image: url(/chesspattern.svg);
+  background-size: cover;
+  background-color: #7ea650;
 }
 .button{
   margin: 1rem;
