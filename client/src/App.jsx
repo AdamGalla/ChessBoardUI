@@ -7,7 +7,7 @@ import "./App.css";
 const socket = io.connect("http://localhost:3001");
 
 function App() {
-  const [fen, setFen] = useState("");
+  const [fen, setFen] = useState("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 
   const clearBoard = () => {
     setFen("")
